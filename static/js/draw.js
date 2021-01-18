@@ -57,12 +57,12 @@ function enabledraw() {
 }
 
 function showdraw() {
-  $('#draw').css({'z-index': '999999', 'position': 'absolute', 'top': '0px', 'right': '0px', 'height': '200px', 'width': '200px', 'border': '1px solid #ccc'}).show();
+  $('#draw').css({'z-index': '999999', 'position': 'absolute', 'top': '0px', 'right': '0px', 'height': '100%', 'width': '100%', 'border': '1px solid #ccc'}).show();
   $('#drawEmbed').show().css({overflow: 'hidden'});
   if (clientVars.ep_draw.enabled !== true) {
     enabledraw();
 
-    $('#draw').hover(function () {
+    /*$('#draw').hover(function () {
       clearTimeout($(this).data('timeout'));
       $('#draw').animate({width: '100%', height: '100%'});
       $('#drawEmbed').animate({width: '100%', height: '100%'});
@@ -75,7 +75,7 @@ function showdraw() {
         $('#drawEmbed').attr('scrolling', 'no');
       }, 500);
       $(this).data('timeout', t);
-    });
+    });*/
   }
   clientVars.ep_draw.visible = true;
 }
