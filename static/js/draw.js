@@ -13,6 +13,7 @@ var postAceInit = function (hook, context) {
     }
 
     $('.toggle_draw').click(() => {
+      console.log("Hello EZ");
       toggledraw();
     });
   }
