@@ -1,4 +1,5 @@
 var postAceInit = function (hook, context) {
+  alert("Hello")
   const draw = clientVars.ep_draw;
   if (draw) {
     if (draw.onByDefault) { // Setup testing else poop out
