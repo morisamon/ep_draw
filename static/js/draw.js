@@ -50,6 +50,7 @@ function enabledraw() {
   const padID = clientVars.padId;
 
   if ($('#draw').length === 0) { // If it's not available already then draw it
+  //update
     $('#editorcontainer').append(`<div id=draw><iframe id='drawEmbed' src='//${draw_host}/boards/${padID}' width='100%' height='100%' style='border:none' frameborder='0' scrolling='no'></iframe></div>`);
   }
   clientVars.ep_draw.enabled = true;
